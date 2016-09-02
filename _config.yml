@@ -1,4 +1,4 @@
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 name: Andrew Williamson
-
+url: https://arfwilliamson.github.io
