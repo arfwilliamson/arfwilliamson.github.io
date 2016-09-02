@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  </head>
+  <body>
+    <script>
+      function setActive() {
+        aObj = document.getElementById('secondary').getElementsByTagName('a');
+        for(i=0;i<aObj.length;i++) { 
+          if(document.location.href.indexOf(aObj[i].href)>=0) {
+            aObj[i].className='active';
+          }
+        }
+      }
+    window.onload = setActive;
+    </script>
+    <div id="page">
+      <div id="header">
+        <div class="wrap">
+          <h1>{{ page.title}}</h1>
+        </div><!--wrap-->
+      </div><!--#header-->
+      <div id="main">
+        <div class="wrap">
+          <div id="primary">
+            {{ content }}
+          </div><!--#primary-->
+          <div id="secondary">
+            <ul>
+              <li><a href="/index.html" class="active">Home</a></li>
+              <li><a href="/blog.html">Blog</a></li>
+            </ul>
+          </div><!--#secondary-->
+        </div><!--#wrap-->
+      </div><!--#main-->
+      <div id="footer">
+        <div class="wrap">
+
+
+        </div><!--wrap-->
+      </div><!--#footer-->
+    </div><!--#page-->
+  </body>
+</html>

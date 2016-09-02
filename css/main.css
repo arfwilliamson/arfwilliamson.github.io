@@ -1,0 +1,122 @@
+/* 
+  http://themefoundation.com/two-column-css-layout/
+*/
+
+/* =Reset ----------------------------------------------------------- */
+ 
+* {
+  font-family: Sans-Serif;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+ 
+html,
+body,
+div{
+ margin: 0;
+ padding: 0;
+}
+
+/* =Structure ----------------------------------------------------------- */
+ 
+.wrap{
+ max-width: 1024px;
+ margin: 0 auto;
+}
+ 
+.wrap:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+#header{
+ height: 12%;
+}
+
+#main{
+ min-height: 84%;
+} 
+
+#footer{
+ height: 4%;
+}
+
+#primary{
+  margin: 0 0;
+  padding: 1em;
+}
+ 
+#secondary{
+  margin: 0 0;
+  padding: 1em;
+}
+
+/* =Media Queries ----------------------------------------------------------- */
+ 
+@media screen and (min-width : 900px) and (orientation : landscape) {
+ #primary{
+   max-width: 640px;
+   margin: 0 auto;
+   float: left;
+   width: 60%;
+ }
+ 
+ #secondary{
+  margin: 0 auto;
+  float: left;
+  width: 40%;
+  padding-left: 2em;
+ }
+}
+
+/* =Actual Styles ----------------------------------------------------------- */
+
+img { 
+  max-width: 100%; 
+}
+
+ul,ol {
+  list-style: inside;
+  padding-left: 0;
+}
+
+/* =CSS Menu----------------------------------------------------------------- */
+
+#secondary ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #dddddd;
+  border: 1px solid #bbbbbb;
+}
+
+#secondary ul li{
+  font-size: 1.2em;
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+
+#secondary ul li:last-child {
+  border-bottom:none;
+}
+
+#secondary ul li a {
+  display: block;
+  padding: 0.3em;
+  text-decoration: none;
+  color: black;
+}
+
+#secondary ul li a:hover {
+  color: white;
+  background-color: #bbbbbb;
+}
+
+#secondary ul li a.active {
+  color: white;
+  background-color: #bbbbbb;
+}
