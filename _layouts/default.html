@@ -9,7 +9,7 @@
       function setActive() {
         aObj = document.getElementById('secondary').getElementsByTagName('a');
         for(i=0;i<aObj.length;i++) { 
-          if(document.location.href.indexOf(aObj[i].href)>=0) {
+          if(document.location.pathname.indexOf(aObj[i].pathname)>=0) {
             aObj[i].className='active';
           }
         }
