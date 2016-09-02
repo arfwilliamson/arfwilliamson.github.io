@@ -6,15 +6,17 @@
   </head>
   <body>
     <script>
-      function setActive() {
-        aObj = document.getElementById('secondary').getElementsByTagName('a');
-        for(i=0;i<aObj.length;i++) { 
-          if(document.location.href.indexOf(aObj[i].href)>=0) {
-            aObj[i].className='active';
+      function setactive() {
+        var nav = document.getElementById('secondary'),
+        anchor = nav.getElementsByTagName('a'),
+        current = window.location.pathname.split('/')[1];
+        for (var i = 0; i < anchor.length; i++) {
+          if(anchor[i].href == current) {
+            anchor[i].className = "active";
           }
         }
       }
-    window.onload = setActive;
+      window.onload = setActive;
     </script>
     <div id="page">
       <div id="header">
@@ -29,8 +31,8 @@
           </div><!--#primary-->
           <div id="secondary">
             <ul>
-              <li><a href="https://arfwilliamson.github.io">Home</a></li>
-              <li><a href="https://arfwilliamson.github.io/blog/">Blog</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/blog">Blog</a></li>
             </ul>
           </div><!--#secondary-->
         </div><!--#wrap-->
