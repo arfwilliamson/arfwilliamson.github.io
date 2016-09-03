@@ -7,12 +7,3 @@ Talent will not; nothing is more common than unsuccessful men with talent.
 Genius will not; unrewarded genius is almost a proverb.
 Education will not; the world is full of educated derelicts.
 Persistence and determination alone are omnipotent.</p>
-<p align=right>- Calvin Coolidge</p>
-{% for post in site.posts %}
-    <p>
-      {{ post.date | date_to_string }} 
-      &raquo; 
-      <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </p>
-{% endfor %}
-
