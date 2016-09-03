@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dining room table"
-date: 2014-05-19
+date: 2016-05-19
 ---
 
 My minimal set of tools has proven it's worth.  Today my son, Duncan, successfully assembled a dining set from Ikea.  
