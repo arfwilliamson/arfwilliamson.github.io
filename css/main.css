@@ -53,13 +53,12 @@ div{
 }
  
 #secondary{
-  max-width: 160px;
   margin: 0 0;
 }
 
 /* =Media Queries ----------------------------------------------------------- */
  
-@media screen and (min-width : 1024px) and (orientation : landscape) {
+@media screen and (min-width : 800px) and (orientation : landscape) {
  #primary{
    max-width: 640px;
    margin: 0 auto;
@@ -69,9 +68,10 @@ div{
  }
  
  #secondary{
-  margin: 0 auto;
-  float: left;
-  width: 40%;
+   max-width: 160px;
+   margin: 0 auto;
+   float: left;
+   width: 40%;
  }
 }
 
