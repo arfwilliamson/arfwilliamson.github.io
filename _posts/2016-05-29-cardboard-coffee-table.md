@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cardboard coffee table"
-date: 2014-05-29
+date: 2016-05-29
 ---
 Today I decided to use what little materials and tools I have to make something.  
 Making things is good for the soul, and I needed to overcome some of the frustration 
