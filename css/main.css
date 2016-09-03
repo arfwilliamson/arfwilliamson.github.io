@@ -17,7 +17,7 @@ body,
 div{
   font-size: 16px;
   margin: 0;
-  padding: 0;
+  padding: 1em;
 }
 
 /* =Structure ----------------------------------------------------------- */
@@ -31,21 +31,6 @@ div{
  content: "";
  display: table;
  clear: both;
-}
-
-#header{
- height: 12%;
- padding: 1em;
-}
-
-#main{
- min-height: 84%;
- padding: 1em;
-} 
-
-#footer{
- height: 4%;
- padding: 1em;
 }
 
 #primary{
@@ -79,13 +64,6 @@ div{
 
 img { 
   max-width: 100%; 
-}
-
-p, 
-ul li,
-ol li {
-  font-size: 120%;
-  line-height: 1.2;
 }
 
 ul,
