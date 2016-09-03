@@ -34,24 +34,25 @@ div{
 
 #header{
  height: 12%;
+ padding: 1em;
 }
 
 #main{
  min-height: 84%;
+ padding: 1em;
 } 
 
 #footer{
  height: 4%;
+ padding: 1em;
 }
 
 #primary{
   margin: 0 0;
-  padding: 1em;
 }
  
 #secondary{
   margin: 0 0;
-  padding: 1em;
 }
 
 /* =Media Queries ----------------------------------------------------------- */
@@ -62,13 +63,14 @@ div{
    margin: 0 auto;
    float: left;
    width: 60%;
+   padding-right: 2em;
  }
  
  #secondary{
+  max-width: 160px;
   margin: 0 auto;
   float: left;
   width: 40%;
-  padding-left: 2em;
  }
 }
 
