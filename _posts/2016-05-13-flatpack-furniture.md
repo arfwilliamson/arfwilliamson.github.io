@@ -1,6 +1,6 @@
 ---
 layout: post
-title: flatpack furniture
+title: Flatpack furniture
 date: 2016-05-13
 ---
 While I was at work today, several boxes of flatpack furniture were delivered.  On opening
