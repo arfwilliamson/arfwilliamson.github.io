@@ -81,15 +81,17 @@ img {
   max-width: 100%; 
 }
 
-p {
+p, 
+ul li,
+ol li {
   font-size: 120%;
   line-height: 1.2;
 }
 
-ul,ol {
+ul,
+ol {
   list-style: inside;
   padding-left: 0;
-  line-height: 200%;
 }
 
 /* =CSS Menu----------------------------------------------------------------- */
