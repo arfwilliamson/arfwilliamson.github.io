@@ -2,8 +2,6 @@
 layout: default
 title: Blog
 ---
-<p align=left>Blog posts in reverse date order (most recent first)</p>
-<p align=right>.</p>
 {% for post in site.posts %}
     <p>
       {{ post.date | date_to_string }} 
