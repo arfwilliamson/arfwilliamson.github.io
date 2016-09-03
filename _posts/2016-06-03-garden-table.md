@@ -1,6 +1,6 @@
 ---
 layout: post
-title: garden-table
+title: Garden table
 date: 2016-06-03
 ---
 Fresh from making the cardboard coffee table, I made a garden table from real wood today.  
