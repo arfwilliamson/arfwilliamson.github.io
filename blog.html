@@ -3,12 +3,11 @@ layout: default
 title: Blog
 ---
 <p align=left>Blog posts in reverse date order (most recent first)</p>
-<ul>
-  {% for post in site.posts %}
-    <li>
+{% for post in site.posts %}
+    <p>
       <span>{{ post.date | date_to_string }}</span> 
       &raquo; 
       <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-    </li>
+    </p>
   {% endfor %}
 </ul>
