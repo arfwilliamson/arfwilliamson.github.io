@@ -37,7 +37,7 @@ enough lengths for the top, front and back, and the eight tresle pieces come out
 The bottom rails are joined to the legs with half-lapped, half-dovetail joints to make it sturdy and 
 prevent racking. These joints were easy and quick to cut with the table saw and tenon saw.  
 
-![Bottom rail joint](/assets/DSC_0183.jpg)
+![Bottom rail joint](/assets/DSC_0183.JPG)
 
 The top rail is just a plain half-lapped joint, and the rail in 1 1/2" shorter because of the notches
 for the front and back planks.  I fixed those with half-dovetail joints too, but in the end they were
@@ -45,7 +45,7 @@ not as sturdy as I wanted, and I had to add a diagonal brace.  There will be mor
 The slot in the front and back planks doesn't go all the way through to the top, so it had to be cut 
 with a chisel.  That was the only tricky part of the whole build.
 
-![Top of leg joint](/assets/DSC_0184.jpg)
+![Top of leg joint](/assets/DSC_0184.JPG)
 
 The work surface is made from eight studs that are screwed onto the rails.  I recessed the screws, so 
 that I can flatten the top later.  Astute readers will have noticed that eight 2 1/2" studs, and two 
@@ -68,4 +68,4 @@ A total material cost of less than £30, and a build time of about four hours.  
 heirloom piece, but it is sturdy and easy-to-build out of readily available materials.  I am pleased 
 with my finished workbench.
 
-![Finished workbench](/assets/DCS_0182.jpg)
+![Finished workbench](/assets/DCS_0182.JPG)
