@@ -22,7 +22,7 @@ body {
 /* =Structure ----------------------------------------------------------- */
  
 .wrap{
- max-width: 800px;
+ max-width: 1024px;
  margin: 0 auto;
 }
  
@@ -44,18 +44,18 @@ body {
  
 @media screen and (min-width : 800px) and (orientation : landscape) {
  #primary{
-   max-width: 640px;
+   max-width: 832px;
    margin: 0 auto;
    float: left;
-   width: 60%;
+   width: 81%;
    padding-right: 2em;
  }
  
  #secondary{
-   max-width: 160px;
+   max-width: 192px;
    margin: 0 auto;
    float: left;
-   width: 40%;
+   width: 19%;
  }
 }
 
