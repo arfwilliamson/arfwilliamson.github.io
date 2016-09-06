@@ -68,4 +68,4 @@ A total material cost of less than £30, and a build time of about four hours.  
 heirloom piece, but it is sturdy and easy-to-build out of readily available materials.  I am pleased 
 with my finished workbench.
 
-![Finished workbench](/assets/DCS_0182.JPG)
+![Finished workbench](/assets/DSC_0182.JPG)
