@@ -7,6 +7,7 @@ an entry somewhere in the blog too, but I wanted a small gallery to
 display my handiwork.
 
 * Cardboard coffee table
+* Garden table
 * Sawhorses
 * Wooden mallet
 * Workbench
