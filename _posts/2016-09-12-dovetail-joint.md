@@ -48,3 +48,5 @@ good to see two panels joined at an almost perfect right angle.  Certainly the
 individual tails and pins are inaccurately cut, but all of them working together
 makes a strong joint that accommodates those inaccuracies.  There is something
 quite poetic in that.
+
+![Dovetail joint](/assets/DSC_0186.JPG)
