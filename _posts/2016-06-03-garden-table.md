@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Garden table
 date: 2016-06-03
 ---
