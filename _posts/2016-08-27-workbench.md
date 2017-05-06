@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Workbench
 date: 2016-08-17
 ---
