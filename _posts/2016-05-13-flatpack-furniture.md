@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Flatpack furniture
 date: 2016-05-13
 ---
