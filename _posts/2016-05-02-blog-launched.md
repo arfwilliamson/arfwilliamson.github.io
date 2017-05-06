@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Blog launched"
 date: 2016-05-02
 ---
