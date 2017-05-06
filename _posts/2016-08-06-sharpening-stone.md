@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Sharpening stone
 date: 2016-08-06
 ---
