@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Making panels 
 date: 2016-08-28
 ---
