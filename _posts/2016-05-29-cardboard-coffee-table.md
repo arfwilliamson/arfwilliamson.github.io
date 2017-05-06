@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: "Cardboard coffee table"
 date: 2016-05-29
 ---
