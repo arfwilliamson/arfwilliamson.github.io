@@ -20,4 +20,4 @@ built with a saw, a ruler, a hammer, a bundle of fencing slats, and a small pack
 nails.  It is temporary, but temporary solutions have a nasty habit of becoming permanent, so
 I did try to make it durable.
 
-![Garden table](/assets/DSC0049.jpg)
+![Garden table](/assets/DSC_0049.jpg)
