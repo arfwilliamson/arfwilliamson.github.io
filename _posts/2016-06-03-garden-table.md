@@ -19,3 +19,5 @@ could out of corrugated cardboard left over from the coffee table.  So this proj
 built with a saw, a ruler, a hammer, a bundle of fencing slats, and a small packet of wire
 nails.  It is temporary, but temporary solutions have a nasty habit of becoming permanent, so
 I did try to make it durable.
+
+![Garden table](/assets/DSC0049.jpg)
