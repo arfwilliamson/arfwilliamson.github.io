@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Dovetail joint
 date: 2016-09-12
 ---
