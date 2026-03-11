@@ -14,3 +14,7 @@ permalink: /crosswords/
     </li>
   {% endfor %}
 </ul>
+
+{% if site.categories.crosswords.size == 0 %}
+  <p>No crosswords added yet. Check back soon!</p>
+{% endif %}
