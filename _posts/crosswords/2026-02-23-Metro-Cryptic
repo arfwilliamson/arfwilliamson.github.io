@@ -1,0 +1,31 @@
+---
+layout: crossword
+title: "Sample"
+category: crosswords
+---
+
+Testing out the new interactive crossword player! This is a simple 5x5 cryptic-style grid to make sure everything is loading correctly.
+
+<div id="exolve">
+exolve-begin
+  exolve-id: test-001
+  exolve-title: The Launch Puzzle
+  exolve-setter: Arf
+  exolve-width: 5
+  exolve-height: 5
+  exolve-grid: 
+    C A T S .
+    O . . O .
+    L I O N S
+    D . . E .
+    . . . R .
+  exolve-clues:
+    Across: 
+      1. Felines that like to sleep (4) [CATS]
+      3. Members of a pride (5) [LIONS]
+    Down: 
+      1. Not warm at all (4) [COLD]
+      2. Specific facts or statistics (4) [DATA]
+      4. Person who earns money (5) [LORER]
+exolve-end
+</div>
