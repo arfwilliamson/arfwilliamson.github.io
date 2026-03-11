@@ -1,7 +1,6 @@
 ---
 title: "Woking Park"
 date: 2026-01-22
-categories: Photos
 featured_image: "/assets/images/2026-01/20260122_083108.JPG"
 ---
 
