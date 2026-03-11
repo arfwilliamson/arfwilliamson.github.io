@@ -30,3 +30,8 @@ defaults:
     values:
       layout: "recipes"
       category: "Recipes"
+  - scope:
+      path: "_posts/crosswords"
+    values:
+      layout: "crosswords"
+      category: "Crosswords"
