@@ -1,6 +1,6 @@
 ---
 layout: crossword
-title: "Metro Cryptic 23 February 2026"
+title: "Metro Cryptic"
 category: Crosswords
 ---
 <div id="exolve">
