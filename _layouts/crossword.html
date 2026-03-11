@@ -3,22 +3,41 @@ layout: default
 ---
 <link rel="stylesheet" href="{{ '/assets/css/exolve-m.css' | relative_url }}">
 
+<style>
+  /* This container holds the entire Exolve player */
+  .exolve-main-area {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  /* Force the grid to stay at the top while you scroll the clues */
+  .exolve-grid-panel {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 20px; /* Distance from the top of the screen when stuck */
+    z-index: 10;
+  }
+
+  /* Ensure the clues area can grow and scroll naturally */
+  .exolve-clues-panel {
+    flex: 1;
+    min-width: 300px;
+  }
+</style>
+
 <div id="exolve-container">
-  <!-- We wrap the content in a <pre> tag to preserve line breaks exactly as written -->
   <pre id="puzzle-data" style="display:none;">{{ content | strip_html }}</pre>
   <div id="exolve"></div>
 </div>
 
 <script src="{{ '/assets/js/exolve-m.js' | relative_url }}"></script>
-
 <script>
   window.onload = function() {
     const rawData = document.getElementById('puzzle-data').textContent;
     if (rawData.includes("exolve-begin")) {
       new Exolve(rawData, "exolve");
-    } else {
-      console.error("Exolve data not found in post content.");
-      document.getElementById('exolve').innerHTML = "Error: Puzzle data not found.";
     }
   };
 </script>
