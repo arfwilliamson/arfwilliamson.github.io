@@ -8,23 +8,21 @@ Testing out the new interactive crossword player! This is a simple 5x5 cryptic-s
 
 <div id="exolve">
 exolve-begin
-  exolve-id: test-002
-  exolve-title: Sample
-  exolve-setter: arfwilliamson
   exolve-width: 5
   exolve-height: 5
-  exolve-grid: 
-    C A T S .
-    O . . A .
-    L I O N S
-    D . . T .
-    . . . A .
-  exolve-clues:
-    Across: 
-      1. Felines that like to sleep (4) [CATS]
-      3. Members of a pride (5) [LIONS]
-    Down: 
-      1. Not warm at all (4) [COLD]
-      2. Person who brings presents at Christmas (5) [SANTA]
+  exolve-grid:
+    HELLO
+    O.A.L
+    WORLD
+    L.G.E
+    STEER
+  exolve-across:
+    1 Greeting (5)
+    4 Earth (5)
+    5 Guide (5)
+  exolve-down:
+    1 Emits cry (5)
+    2 Big (5)
+    3 More ancient (5)
 exolve-end
 </div>
