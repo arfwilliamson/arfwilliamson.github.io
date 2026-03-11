@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <!-- Jekyll will turn style.scss into style.css automatically -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  <div class="site-wrapper">
+    <header>
+      <h1>{{ site.title }}</h1>
+      <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+        <a href="{{ '/photos/' | relative_url }}">Photos</a>
+        <a href="{{ '/recipes/' | relative_url }}">Recipes</a>
+      </nav>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer>
+      Spartan
+    </footer>
+  </div>
+</body>
+</html>

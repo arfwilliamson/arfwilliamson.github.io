@@ -1,0 +1,29 @@
+exclude: 
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "vendor"
+  - "v20160828/"
+title: Just Stuff
+baseurl: "" # Leave empty for username.github.io
+url: "https://arfwilliamson.github.io"
+
+# Automatically assign layouts based on folder names
+defaults:
+  - scope:
+      path: "_posts/blog"
+    values:
+      layout: "post"
+      category: "Blog"
+  - scope:
+      path: "_posts/photos"
+    values:
+      layout: "photos"
+      category: "Photos"
+  - scope:
+      path: "_posts/recipes"
+    values:
+      layout: "recipes"
+      category: "Recipes"
+
+

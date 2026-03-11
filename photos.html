@@ -1,0 +1,24 @@
+---
+layout: default
+title: Photos
+permalink: /photos/
+---
+
+<h2>Gallery</h2>
+
+<div class="photo-grid-index">
+  {% for post in site.posts %}
+    {% if post.path contains "_posts/photos" %}
+      <a href="{{ post.url | relative_url }}" class="photo-card">
+        <!-- We use a background-image div to keep them perfectly square -->
+        <div class="card-thumb" style="background-image: url('{{ post.featured_image | relative_url }}');"></div>
+        <div class="card-text">
+           <h3>{{ post.title }}</h3>
+           <time>{{ post.date | date: "%B %Y" }}</time>
+        </div>
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+

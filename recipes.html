@@ -1,0 +1,21 @@
+---
+layout: default
+title: Recipes
+permalink: /recipes/
+---
+
+<h2>My Cookbook</h2>
+<p>A collection of my more successful kitchen experiments.</p>
+
+<div class="recipe-index">
+  {% for post in site.posts %}
+    {% if post.path contains "_posts/recipes" %}
+      <article class="recipe-card">
+        <a href="{{ post.url | relative_url }}">
+          <h3>{{ post.title }}</h3>
+        </a>
+        <p>⏱ {{ post.prep_time }} | 🍽 {{ post.servings }}</p>
+      </article>
+    {% endif %}
+  {% endfor %}
+</div>
