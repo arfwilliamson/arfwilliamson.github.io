@@ -1,0 +1,15 @@
+---
+layout: default
+title: Crosswords
+permalink: /crosswords/
+---
+
+# My Solved Crosswords
+
+<ul>
+  {% for post in site.categories.crosswords %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.date | date: "%B %d, %Y" }} - {{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
