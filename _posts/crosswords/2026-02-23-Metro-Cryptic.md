@@ -6,7 +6,7 @@ category: crosswords
 
 Testing out the new interactive crossword player! This is a simple 5x5 cryptic-style grid to make sure everything is loading correctly.
 
-<div id="exolve" markdown=0>
+<div id="exolve" markdown="0">
 exolve-begin
   exolve-id: test-001
   exolve-title: Sample
