@@ -1,12 +1,18 @@
 ---
 layout: default
 ---
-<!-- Load Exolve CSS -->
 <link rel="stylesheet" href="{{ '/assets/css/exolve-m.css' | relative_url }}">
 
-<div class="crossword-container">
-  {{ content }}
+<div id="exolve-container">
+  <!-- This is where your Markdown post content (the exolve-begin block) goes -->
+  <div id="puzzle-data" style="display:none;">{{ content }}</div>
+  <div id="exolve"></div>
 </div>
 
-<!-- Load Exolve JS -->
 <script src="{{ '/assets/js/exolve-m.js' | relative_url }}"></script>
+
+<script>
+  // This small script grabs the text from your post and gives it to Exolve
+  const data = document.getElementById('puzzle-data').innerText;
+  new Exolve(data, "exolve");
+</script>
