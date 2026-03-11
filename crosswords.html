@@ -5,15 +5,18 @@ permalink: /crosswords/
 ---
 
 <h2>Solved Crosswords</h2>
+<p>A collection of crosswords that I've solved</p>
 
-<ul>
-  {% for post in site.categories.crosswords %}
-    <li>
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>
+<div>
+  {% for post in site.posts %}
+    {% if post.path contains "_posts/crosswords" %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {% endif %}
   {% endfor %}
-</ul>
+</div>
 
 {% if site.categories.crosswords.size == 0 %}
   <p>No crosswords added yet. Check back soon!</p>
