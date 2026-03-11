@@ -4,15 +4,21 @@ layout: default
 <link rel="stylesheet" href="{{ '/assets/css/exolve-m.css' | relative_url }}">
 
 <div id="exolve-container">
-  <!-- This is where your Markdown post content (the exolve-begin block) goes -->
-  <div id="puzzle-data" style="display:none;">{{ content }}</div>
+  <!-- We wrap the content in a <pre> tag to preserve line breaks exactly as written -->
+  <pre id="puzzle-data" style="display:none;">{{ content | strip_html }}</pre>
   <div id="exolve"></div>
 </div>
 
 <script src="{{ '/assets/js/exolve-m.js' | relative_url }}"></script>
 
 <script>
-  // This small script grabs the text from your post and gives it to Exolve
-  const data = document.getElementById('puzzle-data').innerText;
-  new Exolve(data, "exolve");
+  window.onload = function() {
+    const rawData = document.getElementById('puzzle-data').textContent;
+    if (rawData.includes("exolve-begin")) {
+      new Exolve(rawData, "exolve");
+    } else {
+      console.error("Exolve data not found in post content.");
+      document.getElementById('exolve').innerHTML = "Error: Puzzle data not found.";
+    }
+  };
 </script>
