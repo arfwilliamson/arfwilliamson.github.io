@@ -11,6 +11,11 @@ url: "https://arfwilliamson.github.io"
 # Automatically assign layouts based on folder names
 defaults:
   - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
       path: "_posts/blog"
     values:
       layout: "post"
