@@ -15,17 +15,12 @@ exolve-begin
   exolve-height: 5
   exolve-grid: 
     C A T S .
-    O . . O .
+    O . . A .
     L I O N S
-    D . . E .
-    . . . R .
+    D . . T .
+    . . . A .
   exolve-clues:
-    Across: 
-      1. Felines that like to sleep (4) [CATS]
-      3. Members of a pride (5) [LIONS]
-    Down: 
-      1. Not warm at all (4) [COLD]
-      2. Specific facts or statistics (4) [DATA]
-      4. Person who earns money (5) [LORER]
+    Across: 1. Felines that like to sleep (4) [CATS], 3. Members of a pride (5) [LIONS]
+    Down: 1. Not warm at all (4) [COLD], 2. Person who brings presents at Christmas (5) [SANTA]
 exolve-end
 </div>
