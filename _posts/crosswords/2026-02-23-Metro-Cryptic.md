@@ -5,8 +5,8 @@ category: crosswords
 ---
 <div id="exolve">
 exolve-begin
-  exolve-width: 5
-  exolve-height: 5
+  exolve-width: 13
+  exolve-height: 13
   exolve-grid:
     VACUUM.MOBILE
     .T.N.A.A.A.A.
