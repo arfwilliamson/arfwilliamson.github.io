@@ -6,11 +6,11 @@ category: crosswords
 
 Testing out the new interactive crossword player! This is a simple 5x5 cryptic-style grid to make sure everything is loading correctly.
 
-<div id="exolve">
+<div id="exolve" markdown=0>
 exolve-begin
   exolve-id: test-001
-  exolve-title: The Launch Puzzle
-  exolve-setter: Arf
+  exolve-title: Sample
+  exolve-setter: arfwilliamson
   exolve-width: 5
   exolve-height: 5
   exolve-grid: 
