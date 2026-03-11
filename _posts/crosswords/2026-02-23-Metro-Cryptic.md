@@ -46,6 +46,7 @@ exolve-begin
    14 Conveyance of van? (7)
    16 Helping mostly with relationship (5)
    17 Philosopher takes some of us to Iceland (5)
+  exolve-copyright: Puzzler Media Ltd www.puzzler.com 
 exolve-end
 </div>
-This puzzle is shared for personal, non-commercial use and remains © Puzzler Media Ltd. For more puzzles, visit www.puzzler.com.
+

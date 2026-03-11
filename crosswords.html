@@ -5,7 +5,10 @@ permalink: /crosswords/
 ---
 
 <h1>Solved Crosswords</h1>
-<p>A collection of crosswords that I've solved</p>
+
+<p>On the train in and out of London, I try to do the cryptic crosswords.  Sometimes I 
+finish on.  This is a collection of some that I've finished without needing a dictionary,
+thesaurus or anagram finder.</p>
 
 <ul class="tabular-list">
   {% for post in site.posts %}
@@ -20,6 +23,3 @@ permalink: /crosswords/
   {% endfor %}
 </ul>
 
-{% if site.categories.crosswords.size == 0 %}
-  <p>No crosswords added yet. Check back soon!</p>
-{% endif %}
