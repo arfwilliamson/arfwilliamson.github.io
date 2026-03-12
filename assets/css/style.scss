@@ -1,9 +1,10 @@
 ---
 ---
 /* SPARTAN SITE ARCHITECTURE 2026 */
+/* .scss FOR JEKYLL */
 
 $center-width: 650px;
-$mobile-break: 500px;
+$mobile-break: 700px;
 $bg-light: #f4f4f4;
 $border-color: #bbb;
 $text-muted: #888;
@@ -20,6 +21,7 @@ html, body {
   color: #555;
   line-height: 1.6;
   text-align: justify;
+  font-size: 1.2rem;
 }
 
 ul {
@@ -44,20 +46,15 @@ a:hover {
   max-width: $center-width;
   margin: 0 auto;
   padding: 0 10px; 
-  width: 100%
+  width: 100%;
 }
 
 header {
   border-bottom: 1px solid $border-color;
   margin-bottom: 4px;
   padding-top: 10px;
-	
-  h1 { 
-    text-weight: 700;
-    font-size: 3em;
-  }
 }
-
+	
 h1 {
   font-weight: normal;
   text-align: left;
@@ -75,7 +72,7 @@ h1 {
 
 .nav-content {
   margin-top: 4px;
-  border-top: 1px solid $border_color;
+  border-top: 1px solid $border-color;
   padding-bottom: 5px;
   height: 100%;
   display: flex;
@@ -212,7 +209,7 @@ figure.highlight, div.highlighter-rouge {
 }
 
 /* 5. MINIMAL RESPONSIVE */
-@media (max-width: $mobile_break) {
+@media (max-width: $mobile-break) {
   .tabular-item {
     grid-template-columns: 1fr;
     gap: 2px;
@@ -225,7 +222,7 @@ figure.highlight, div.highlighter-rouge {
   header {
     padding-top: 5px; 
   }
-
+   
   h1 {
     font-size: 1.6rem; 
   }
