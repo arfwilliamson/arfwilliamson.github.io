@@ -12,9 +12,11 @@ permalink: /photos/
       <a href="{{ post.url | relative_url }}" class="photo-card">
         <!-- We use a background-image div to keep them perfectly square -->
         <div class="card-thumb" style="background-image: url('{{ post.featured_image | relative_url }}');"></div>
-        <div class="card-text">
-           <h3>{{ post.title }}</h3>
-           <time>{{ post.date | date: "%B %Y" }}</time>
+          <div class="card-text">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <h3>{{ post.title }}</h3>
+            <span>{{ post.date | date: "%d %B %Y" }}</span>
+          </div>
         </div>
       </a>
     {% endif %}

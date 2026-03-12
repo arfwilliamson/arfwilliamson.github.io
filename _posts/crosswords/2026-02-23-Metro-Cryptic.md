@@ -4,6 +4,7 @@ date: 2026-02-23
 ---
 <div id="exolve">
 exolve-begin
+  exolve-option: font-family:sans-serif
   exolve-width: 13
   exolve-height: 13
   exolve-grid:

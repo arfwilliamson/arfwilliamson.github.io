@@ -2,87 +2,100 @@
 ---
 /* SPARTAN SITE ARCHITECTURE 2026 */
 
+$center-width: 650px;
+$mobile-break: 500px;
+$bg-light: #f4f4f4;
+$border-color: #bbb;
+$text-muted: #888;
+
+* {
+  box-sizing: border-box;
+}
+
 html, body {
-    font-family: "Bookerly", sans-serif; /* Classic spartan look, or use sans-serif */
-	margin: 0;
-    padding: 0;
-    background-color: #fff;
-    color: #333;
-    line-height: 1.6;
+  font-family: "Bookerly", sans-serif; /* Classic spartan look, or use sans-serif */
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 ul {
-    list-style-type: none; 
-    padding: 0;     
+  list-style-type: none; 
+  padding: 0;     
 }
 
 li {
-    border-bottom: 1px solid #f9f9f9; /* Optional: very faint divider */
+  border-bottom: 1px solid #f9f9f9; /* Optional: very faint divider */
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
-    text-decoration: underline;
-}
-
-* {
-	box-sizing: border-box;
+  text-decoration: underline;
 }
 
 .container, .nav-content {
-    max-width: 650px;
-    margin: 0 auto;
-    padding: 0 10px; 
-	width: 100%
+  max-width: $center-width;
+  margin: 0 auto;
+  padding: 0 10px; 
+  width: 100%
 }
 
 header {
-	border-bottom: 1px solid #eee;
-	margin-bottom: 4px;
-	padding-top: 10px;
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 4px;
+  padding-top: 10px;
+	
+  h1 { 
+    text-weight: 700;
+    font-size: 3em;
+  }
 }
 
 h1 {
-    font-weight: normal;
-    text-align: left;
+  font-weight: normal;
+  text-align: left;
 }
 
 .nav-bottom {
-    position: fixed;
-    bottom: 0;
-	padding: 0 5px;
-    width: 100%;
-    background-color: #fff;
-    transition: transform 0.3s ease;
-    z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  padding: 0 5px;
+  width: 100%;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+  z-index: 1000;
 }
 
 .nav-content {
-	margin-top: 4px;
-	border-top: 1px solid #eee;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	gap: 5px 30px;
-	align-items: center;
-	list-style: none;
-	flex-wrap: wrap;
+  margin-top: 4px;
+  border-top: 1px solid $border_color;
+  padding-bottom: 5px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px 30px;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
 }
 
 .nav-content li {
-	bottom-border: none;
+  bottom-border: none;
 }
 
 .nav-hidden {
-    transform: translateY(100%);
+  transform: translateY(100%);
 }
 
 main {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 /* 2. LISTS & GRIDS */
@@ -136,7 +149,7 @@ img {
       width: 100%;
       aspect-ratio: 1 / 1;
       object-fit: cover;
-      border-radius: 8px;
+      border-radius: 8px;      
     }
   }
 }
@@ -148,7 +161,7 @@ img {
   color: inherit;
   transition: transform 0.2s;
   
-  &:hover { transform: translateY(-3px); border-color: #ddd; }
+  &:hover { transform: translateY(-3px); }
   
   .card-thumb {
     width: 100%;
@@ -168,7 +181,7 @@ img {
   margin-top: 2rem;
 
   .ingredients, .instructions {
-    background: #f9f9f9;
+    background: $bg-light;
     padding: 20px;
     border-radius: 8px;
   }
@@ -192,14 +205,14 @@ figure.highlight, div.highlighter-rouge {
     font-size: 0.7rem;
     font-weight: bold;
     text-transform: uppercase;
-    background: #e0e0e0;
+    background: $bg-light;
     border-bottom-right-radius: 8px;
     border-top-left-radius: 8px;
   }
 }
 
 /* 5. MINIMAL RESPONSIVE */
-@media (max-width: 650px) {
+@media (max-width: $mobile_break) {
   .tabular-item {
     grid-template-columns: 1fr;
     gap: 2px;
