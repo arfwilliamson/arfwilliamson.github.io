@@ -1,81 +1,102 @@
 ---
 ---
-/* 
-   SPARTAN SITE ARCHITECTURE 2026
-*/
-$center-width: 650px;
-$bg-light: #f4f4f4;
-$border-color: #ddd;
-$text-muted: #888;
+/* SPARTAN SITE ARCHITECTURE 2026 */
 
-/* 1. MASTER LAYOUT */
 html, body {
-  height: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  font-family: sans-serif; 
-  line-height: 1.5; 
-  margin: 0; 
-  color: #333;
-  background-color: #fff;
+    font-family: "Bookerly", sans-serif; /* Classic spartan look, or use sans-serif */
+	margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
 }
 
-.site-wrapper {
-  max-width: $center-width;
-  margin: 0 auto;
-  padding: 0 20px;     /* Mobile gutters */
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+ul {
+    list-style-type: none; 
+    padding: 0;     
 }
 
-header, footer {
-  flex-shrink: 0;
+li {
+    border-bottom: 1px solid #f9f9f9; /* Optional: very faint divider */
 }
 
-main { 
-  flex: 1;             /* Pushes footer to bottom on short pages */
-  overflow-y: auto;
-  padding-bottom: 2rem;
-  scrollbar-width: thin;
-  
-  h1 { font-size: 1.2em; }
-  h2 { font-size: 1.0em; }
-  h3 { font-size: 0.8em; }
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container, .nav-content {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 10px; 
+	width: 100%
 }
 
 header {
-  padding: 1rem 0; 
-  margin-bottom: 0.5rem; 
-  text-align: center;
-  border-bottom: 1px solid $border-color;
-
-  h1 {
-    font-size: 1.8em;
-    font-weight: 700;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    a { text-decoration: none; color: #444; font-weight: 500; }
-  }
+	border-bottom: 1px solid #eee;
+	margin-bottom: 4px;
+	padding-top: 10px;
 }
 
-footer {
-  padding: 1rem 0;
-  text-align: center;
-  border-top: 1px solid $border-color;
-  font-size: 0.9rem;
-  color: $text-muted;
+h1 {
+    font-weight: normal;
+    text-align: left;
 }
 
-img { 
-  max-width: 100%; 
-  height: auto; 
-  display: block; 
-  border-radius: 8px; 
+.nav-bottom {
+    position: fixed;
+    bottom: 0;
+	padding: 0 5px;
+    width: 100%;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.nav-content {
+	margin-top: 4px;
+	border-top: 1px solid #eee;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 5px 30px;
+	align-items: center;
+	list-style: none;
+	flex-wrap: wrap;
+}
+
+.nav-content li {
+	bottom-border: none;
+}
+
+.nav-hidden {
+    transform: translateY(100%);
+}
+
+main {
+    padding-bottom: 100px;
+}
+
+@media (max-width: 650px) {
+    header {
+        padding-top: 5px; 
+     }
+
+    h1 {
+        font-size: 1.6rem; 
+    }
+
+    .nav-bottom a {
+        font-size: 0.8rem; 
+    }
 }
 
 /* 2. LISTS & GRIDS */
@@ -92,11 +113,20 @@ img {
   align-items: baseline;
 
   .post-date { font-family: monospace; color: #444; }
+ 
   .post-title a { text-decoration: none; }
+
   .post-cat { color: #bbb; margin-left: 8px; font-size: 0.8rem; }
 }
 
 /* Photo & Recipe Grids */
+img { 
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+  border-radius: 8px; 
+}
+
 .photo-grid-index, 
 .photos-post-content,
 .recipe-index {
@@ -132,7 +162,7 @@ img {
   color: inherit;
   transition: transform 0.2s;
   
-  &:hover { transform: translateY(-3px); border-color: $border-color; }
+  &:hover { transform: translateY(-3px); border-color: #ddd; }
   
   .card-thumb {
     width: 100%;
