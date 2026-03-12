@@ -85,20 +85,6 @@ main {
     padding-bottom: 100px;
 }
 
-@media (max-width: 650px) {
-    header {
-        padding-top: 5px; 
-     }
-
-    h1 {
-        font-size: 1.6rem; 
-    }
-
-    .nav-bottom a {
-        font-size: 0.8rem; 
-    }
-}
-
 /* 2. LISTS & GRIDS */
 .tabular-list {
   display: grid;
@@ -213,7 +199,7 @@ figure.highlight, div.highlighter-rouge {
 }
 
 /* 5. MINIMAL RESPONSIVE */
-@media (max-width: 500px) {
+@media (max-width: 650px) {
   .tabular-item {
     grid-template-columns: 1fr;
     gap: 2px;
@@ -223,5 +209,15 @@ figure.highlight, div.highlighter-rouge {
   .photos-post-content figure {
     grid-column: 1 / -1;
   }
-}
+  header {
+    padding-top: 5px; 
+  }
 
+  h1 {
+    font-size: 1.6rem; 
+  }
+
+  .nav-bottom a {
+    font-size: 0.8rem; 
+  }
+}
