@@ -2,35 +2,39 @@
 title: "UK Grid Live TRMNL Plugin"
 date: 2026-03-01
 ---
-### Visualising the UK Grid Mix on a TRMNL E-Ink Display
+## Visualising the UK Grid Mix on a TRMNL E-Ink Display
 
 I wanted a low-power, "glanceable" way to see where the UK's electricity is coming 
-from in real-time. Using a **TRMNL** display and the **National Grid ESO API**, I 
-built a live dashboard.
+from in real-time. Using a **TRMNL** display and the **National Energy System Operator API**, I 
+built a simple, live dashboard.
 
-### The Data Source
+## Data Source
 
 I'm polling the [Carbon Intensity API](https://carbonintensity.org.uk) which 
 provides a breakdown of generation by fuel type (Wind, Nuclear, Gas, etc.).
 
-**Settings:**
-* **Method:** `GET`
-* **URL:** `https://api.carbonintensity.org.uk`
-* **Headers:** `Accept=application/json`, `User-Agent=Mozilla/5.0`
+### Settings
+- **Method:** `GET`
+- **URL:** `https://api.carbonintensity.org.uk`
+- **Headers:** `Accept=application/json`, `User-Agent=Mozilla/5.0`
 
+### Response
 The API returns a JSON object. 
 ```json
 {
   "data": {
     "generationmix": [
       { "fuel": "gas", "perc": 42.1 },
+      .
+      .
+      .
       { "fuel": "wind", "perc": 28.5 }
     ]
   }
 }
 ```
 
-### The Markup
+## Markup
 To make the most of the e-ink screen, I use **Liquid** to sort the fuels by their 
 percentage so the biggest contributors stay at the top.  This is done within a 
 block of code that uses the TRMNL CSS Framework to create high-contrast bars that 

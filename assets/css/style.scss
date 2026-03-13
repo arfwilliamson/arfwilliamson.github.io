@@ -29,10 +29,6 @@ ul {
   padding: 0;     
 }
 
-li {
-  border-bottom: 1px solid #f9f9f9; /* Optional: very faint divider */
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -107,6 +103,7 @@ main {
   grid-template-columns: 50% 1fr; 
   gap: 2%;
   align-items: baseline;
+  border-bottom: 1px solid #f9f9f9; /* Optional: very faint divider */
   .post-title { text-decoration: none; }
   .post-date { color: #444; font-size: 0.8rem; }
   .post-cat { color: #bbb; margin-left: 2%; font-size: 0.8rem; }
@@ -183,8 +180,8 @@ img {
   margin-top: 2rem;
 
   .ingredients, .instructions {
-    background: $bg-light;
-    padding: 20px;
+    background: #fff;
+    padding-left: 2%;
     border-radius: 8px;
   }
 }
