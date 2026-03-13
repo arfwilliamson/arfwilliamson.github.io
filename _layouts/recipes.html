@@ -3,7 +3,6 @@ layout: default
 ---
 <article class="recipe-layout">
   <p>Prep: {{ page.prep_time }} | Serves: {{ page.servings }}</p>
-
   <div class="recipe-container">
     <aside class="ingredients">
       <h2>Ingredients</h2>
@@ -13,7 +12,6 @@ layout: default
         {% endfor %}
       </ul>
     </aside>
-
     <div class="instructions">
       <h2>Method</h2>
       {{ content }}

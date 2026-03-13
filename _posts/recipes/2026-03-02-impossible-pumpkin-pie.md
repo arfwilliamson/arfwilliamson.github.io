@@ -19,10 +19,10 @@ ingredients:
   - 1 T vanilla essence
 ---
 
-Gently beat sugar, butter, eggs.\
-Mix in pumpkin, milk, vanilla.\
-Sift in flour, baking powder, salt, spices.\
-Beat until smooth.\
-Pour into buttered 9 inch pie dish.\
-Bake at 180&deg;C for 50 to 55 minutes.
+- Gently beat sugar, butter, eggs.
+- Mix in pumpkin, milk, vanilla.
+- Sift in flour, baking powder, salt, spices.
+- Beat until smooth.
+- Pour into buttered 9 inch pie dish.
+- Bake at 180&deg;C for 50 to 55 minutes.
 
