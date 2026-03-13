@@ -104,8 +104,8 @@ main {
 
 .tabular-item {
   display: grid;
-  grid-template-columns: 1fr 30%; 
-  gap: 15px;
+  grid-template-columns: 60% 1fr; 
+  gap: 2%;
   align-items: baseline;
 
   .post-title { text-decoration: none; }
