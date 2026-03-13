@@ -2,22 +2,21 @@
 layout: default
 title: home
 ---
-<h1>Welcome to the chaos </h1>
+<h2>Welcome to the chaos </h2>
+
 <p>When people ask what I’m working on, I usually just say “stuff.” It’s a polite way of saying, “I’m not telling you yet because it might blow up in my face.” This blog is a look at what happens when it doesn't.</p>
+
 <p> Think of this as a view of me through lightly-frosted glass: a collection of useless facts, incoherent code, woodwork projects, and cooking experiments that are (mostly) edible. I know stuff. I fix things. I’m always adding features. Step inside.</p>
+
 <ul class="tabular-list">
   {% for post in site.posts %}
     <li class="tabular-item">
-      <span class="post-title”>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a> 
+      <span class="post-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </span>
       <span>
-        <span class="post-date">
-          {{ post.date | date: "%d %b %Y" }}
-        </span>
-        <span class="post-cat">
-          [{{ post.category }}]
-        </span>
+        <span class="post-date">{{ post.date | date: "%d %b %Y" }}</span>
+        <span class="post-cat">[{{ post.category }}]</span>
       </span>
     </li>
   {% endfor %}

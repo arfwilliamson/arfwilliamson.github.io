@@ -4,7 +4,7 @@ title: My Crosswords
 permalink: /crosswords/
 ---
 
-<h1>Solved Crosswords</h1>
+<h2>Solved Crosswords</h2>
 
 <p>On the train in and out of London, I try to do the cryptic crosswords.  Sometimes I 
 finish one.  This is a collection of some that I've finished without needing a dictionary, thesaurus or anagram finder.</p>
@@ -13,11 +13,11 @@ finish one.  This is a collection of some that I've finished without needing a d
   {% for post in site.posts %}
     {% if post.path contains "_posts/crosswords" %}
       <li class="tabular-item">
-        <span class="post-date">{{ post.date | date: "%d %b %Y" }}</span>
         <span class="post-title">
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         </span>
-      </li>
+        <span class="post-date">{{ post.date | date: "%d %b %Y" }}</span>
+     </li>
     {% endif %}
   {% endfor %}
 </ul>
