@@ -10,7 +10,10 @@
 <body>
   <div class="container">
     <header>
-      <h1>{{ site.title }}</h1>
+      <div style="display: flex; justify-content: space-between; align-items: baseline;">
+        <h1>{{ page.title }}</h1>
+        <span>{{ page.date | date: "%d %B %Y" }}</span>
+      </div>
     </header>
     <main>
       {{ content }}
