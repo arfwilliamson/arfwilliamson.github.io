@@ -8,11 +8,11 @@ title: home
 <ul class="tabular-list">
   {% for post in site.posts %}
     <li class="tabular-item">
-      <span class="post-date">{{ post.date | date: "%d %b %Y" }}</span>
-      <span class="post-title">
+      <span class="post-title”>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <small class="post-cat">[{{ post.category }}]</small>
-      </span>
+      <span class="post-date">
+       {{ post.date | date: "%d %b %Y" }}</span>
+      <span class="post-cat">[{{ post.category }}]</small></span>
     </li>
   {% endfor %}
 </ul>
