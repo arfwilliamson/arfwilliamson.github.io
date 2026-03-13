@@ -10,9 +10,15 @@ title: home
     <li class="tabular-item">
       <span class="post-title”>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      <span class="post-date">
-       {{ post.date | date: "%d %b %Y" }}</span>
-      <span class="post-cat">[{{ post.category }}]</small></span>
+      </span>
+      <span>
+        <span class="post-date">
+          {{ post.date | date: "%d %b %Y" }}
+        </span>
+        <span class="post-cat">
+          [{{ post.category }}]
+        </span>
+      </span>
     </li>
   {% endfor %}
 </ul>
