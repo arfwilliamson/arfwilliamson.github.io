@@ -8,14 +8,17 @@ $mobile-break: 700px;
 $bg-light: #f4f4f4;
 $border-color: #bbb;
 $text-muted: #888;
+$screen-padding: 0 10px;
+$main-padding: 0 12px 100px 10px; 
 
+/* Establish a blank canvas with no margins */
 * {
   box-sizing: border-box;
 }
 
 html, body {
-  font-family: "Bookerly", sans-serif; /* Classic spartan look, or use sans-serif */
   margin: 0;
+  font-family: "Bookerly", sans-serif; 
   background-color: #fff;
   color: #555;
   line-height: 1.6;
@@ -23,20 +26,7 @@ html, body {
   font-size: 1.0rem;
 }
 
-ul {
-  list-style-type: none; 
-  padding: 0;     
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
+/* Add a container that centers a block, still with no margins */
 .container, .nav-content {
   max-width: $center-width;
   margin: 0 auto;
@@ -44,17 +34,7 @@ a:hover {
   width: 100%;
 }
 
-header {
-  border-bottom: 1px solid $border-color;
-  margin-bottom: 4px;
-  padding: 5px;
-}
-	
-h1 {
-  font-weight: normal;
-  text-align: left;
-}
-
+/* Add a bottom navigation bar on top, also with no margins */
 .nav-bottom {
   position: fixed;
   bottom: 0;
@@ -64,10 +44,11 @@ h1 {
   z-index: 1000;
 }
 
+/* Put content in the navigation bar, with padding */
 .nav-content {
   margin-top: 4px;
   border-top: 1px solid $border-color;
-  padding: 5px; 
+  padding: $screen-padding; 
   height: 100%;
   display: flex;
   justify-content: center;
@@ -77,15 +58,48 @@ h1 {
   flex-wrap: wrap;
 }
 
+/* Move the navigation bar out of the way and use */
+/* javascript to reveal it when appropriate.  */
 .nav-hidden {
   transform: translateY(100%);
 }
 
-main {
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 100px;
+/* Put content in the header, with the same padding */
+header {
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 4px;
+  padding: $screen-padding;
 }
+	
+/* Put content in the main block, with extra padding */
+/* on the right for the scroll bar and on the bottom */
+/* to fill up space.	                             */
+main {
+  padding: $main-padding;
+}
+
+h1 {
+  font-weight: normal;
+  text-align: left;
+}
+
+/* Take the bullet and padding off of lists */
+ul {
+  list-style-type: none; 
+  padding: 0;     
+}
+
+/* Simplify presentation of links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
 
 /* 2. LISTS & GRIDS */
 .tabular-list {
@@ -214,9 +228,6 @@ figure.highlight, div.highlighter-rouge {
   /* Photos-post fix for mobile images */
   .photos-post-content figure {
     grid-column: 1 / -1;
-  }
-  header {
-    padding-top: 5px; 
   }
    
   h1 {
