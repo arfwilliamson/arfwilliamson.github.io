@@ -5,11 +5,11 @@
 
 $center-width: 650px;
 $mobile-break: 700px;
-$bg-light: #f4f4f4;
+$bg-light: #f8f8f8;
 $border-color: #bbb;
 $text-muted: #888;
-$screen-padding: 0 10px;
-$main-padding: 0 12px 100px 10px; 
+$screen-padding: 1%;
+$main-padding: 0 1.2% 100% 1%; 
 
 /* Establish a blank canvas with no margins */
 * {
@@ -18,12 +18,10 @@ $main-padding: 0 12px 100px 10px;
 
 html, body {
   margin: 0;
-  font-family: "Bookerly", sans-serif; 
   background-color: #fff;
   color: #555;
-  line-height: 1.6;
   text-align: justify;
-  font-size: 1.0rem;
+  font-family: sans-serif;
 }
 
 /* Add a container that centers a block, still with no margins */
@@ -49,6 +47,7 @@ html, body {
   margin-top: 4px;
   border-top: 1px solid $border-color;
   padding: $screen-padding; 
+  padding-bottom: 10px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -78,10 +77,7 @@ main {
   padding: $main-padding;
 }
 
-h1 {
-  font-weight: normal;
-  text-align: left;
-}
+
 
 /* Take the bullet and padding off of lists */
 ul {
@@ -100,7 +96,6 @@ a:hover {
 }
 
 
-
 /* 2. LISTS & GRIDS */
 .tabular-list {
   display: grid;
@@ -115,7 +110,7 @@ a:hover {
   align-items: baseline;
   border-bottom: 1px solid #f9f9f9; /* Optional: very faint divider */
   .post-title { text-decoration: none; }
-  .post-date { color: #444; font-size: 0.8rem; }
+  .post-date { color: #555; font-size: 0.8rem; }
   .post-cat { color: #bbb; margin-left: 2%; font-size: 0.8rem; }
 }
 
