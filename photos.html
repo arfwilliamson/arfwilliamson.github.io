@@ -3,6 +3,7 @@ layout: default
 title: My Album
 permalink: /photos/
 ---
+
 <div class="photo-grid-index">
   {% for post in site.posts %}
     {% if post.path contains "_posts/photos" %}
@@ -18,6 +19,8 @@ permalink: /photos/
       </a>
     {% endif %}
   {% endfor %}
+</div>
+
 </div>
 
 
