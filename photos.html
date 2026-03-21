@@ -7,20 +7,15 @@ permalink: /photos/
 <div class="photo-grid-index">
   {% for post in site.posts %}
     {% if post.path contains "_posts/photos" %}
-      <a href="{{ post.url | relative_url }}" class="photo-card">
+      <article class="photo-card">
         <!-- We use a background-image div to keep them perfectly square -->
-        <div class="card-thumb" style="background-image: url('{{ post.featured_image | relative_url }}');"></div>
-          <div class="card-text">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-            <h3>{{ post.title }}</h3>
-            <span>{{ post.date | date: "%d %B %Y" }}</span>
-          </div>
-        </div>
-      </a>
+        <a href="{{ post.url | relative_url }}">
+          <div class="card-thumb" style="background-image: url('{{ post.featured_image | relative_url }}');"></div>
+          <h3>{{ post.title }}</h3>
+        </a>
+        <p>{{ post.date | date: "%d %B %Y" }}</p>
+      </article>
     {% endif %}
   {% endfor %}
 </div>
-
-</div>
-
 

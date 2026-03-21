@@ -28,7 +28,6 @@ html, body {
 .container, .nav-content {
   max-width: $center-width;
   margin: 0 auto;
-  padding: 0; 
   width: 100%;
 }
 
@@ -112,15 +111,15 @@ a:hover {
 }
 
 /* Photo & Recipe Grids */
-.photo-grid-index, 
-.recipe-index {
+.photo-grid-index, .recipe-index {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat( auto-fit, minmax( 250px, 1fr) );
   gap: 6px; /* gap between boxes */
   h3 { margin-bottom: 0; }
   p { margin-top: 0; }
 }
 
+/* 3. PHOTO SPECIFIC */
 .photo-card, .recipe-card {
   border: 1px solid transparent;
   border-radius: 2%; 
@@ -142,7 +141,7 @@ a:hover {
 /* The Photo Post Grid */
 .photos-post-content {
 	display: grid;	
-	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
 	gap: 2px;
 
   /* This tells text, headers, and lists to span all columns (full width) */
@@ -160,8 +159,7 @@ a:hover {
       object-fit: cover;
       transition: transform 0.3s;
     }
-
-    img:hover { transform: translateY(-2px); } 
+    img:hover { transform: translateY(-10px); } 
   }
 }
 
@@ -195,12 +193,10 @@ a:hover {
   font-size: 1rem;
 }
 
-
-
-/* 3. RECIPE SPECIFIC */
+/* 4. RECIPE SPECIFIC */
 .recipe-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat( auto-fit, minmax( 250px, 1fr) );
   gap: 12px;
 
   .ingredients, .instructions {
@@ -210,7 +206,7 @@ a:hover {
   }
 }
 
-/* 4. CODE BLOCKS */
+/* 5. CODE BLOCKS */
 figure.highlight, div.highlighter-rouge {
   position: relative;
   margin: 2rem 0;
@@ -234,7 +230,7 @@ figure.highlight, div.highlighter-rouge {
   }
 }
 
-/* 5. MINIMAL RESPONSIVE */
+/* 6. MINIMAL RESPONSIVE */
 @media (max-width: $mobile-break) {
   .tabular-item {
     grid-template-columns: 1fr;
