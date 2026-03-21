@@ -1,4 +1,3 @@
 <figure class="grid-item">
-  <img src="{{ include.url | relative_url }}" alt="{{ include.caption }}">
-  <figcaption>{{ include.caption }}</figcaption>
+  <img src="{{ include.url | relative_url }}" alt="{{ include.caption }}" onclick="openLightbox(this)">
 </figure>

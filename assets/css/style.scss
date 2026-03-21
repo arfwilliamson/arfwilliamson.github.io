@@ -77,8 +77,6 @@ main {
   padding: $main-padding;
 }
 
-
-
 /* Take the bullet and padding off of lists */
 ul {
   list-style-type: none; 
@@ -94,7 +92,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
 
 /* 2. LISTS & GRIDS */
 .tabular-list {
@@ -115,67 +112,90 @@ a:hover {
 }
 
 /* Photo & Recipe Grids */
-img { 
-  max-width: 100%; 
-  height: auto; 
-  display: block; 
-  border-radius: 8px; 
-}
-
 .photo-grid-index, 
-.photos-post-content,
 .recipe-index {
   display: grid;
-/*  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 6px; /* gap between boxes */
-  
   h3 { margin-bottom: 0; }
   p { margin-top: 0; }
 }
 
-/* Individual Photo Post */
-.photos-post-content {
-  /* This tells text, headers, and lists to span all columns (full width) */
-  > p, > h1, > h2, > h3, > ul, > ol {
-    grid-column: 1 / -1;
-    margin-bottom: 1.5rem;
-  }
-
-  /* This ensures the figures (images) stay in their 250px grid boxes */
-  figure {
-    margin: 0;
-    img {
-      width: 100%;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      border-radius: 8px;      
-    }
-  }
-}
-
 .photo-card, .recipe-card {
   border: 1px solid transparent;
-  border-radius: 8px;
+  border-radius: 2%; 
   text-decoration: none;
   color: inherit;
-  transition: transform 0.2s;
   text-align: center;
-          
-  &:hover { 
-    transform: translateY(-3px); 
-    border-color: $border-color;
-  }
-  
+ 
+   /* Pictures on index cards */         
   .card-thumb {
     width: 100%;
     aspect-ratio: 1 / 1;
     background-size: cover;
     background-position: center;
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 2%;
   }
 }
+
+/* The Photo Post Grid */
+.photos-post-content {
+	display: grid;	
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 2px;
+
+  /* This tells text, headers, and lists to span all columns (full width) */
+  > p, > h1, > h2, > h3, > ul, > ol {
+    grid-column: 1 / -1;
+    margin-bottom: 1.5rem;
+  }
+
+  /* This ensures the figures (images) stay in their grid boxes */
+  figure {
+    margin: 0;
+    img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+
+    img:hover { transform: translateY(-2px); } 
+  }
+}
+
+/* The Lightbox Overlay */
+#lightbox {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+#lightbox-content {
+  width: 100%;
+  height: auto;
+}
+
+#lightbox img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 100%;
+  box-shadow: 0 1% 4% rgba(0,0,0,0.5); 
+}
+
+#lightbox caption {
+  font-size: 1rem;
+}
+
+
 
 /* 3. RECIPE SPECIFIC */
 .recipe-container {
@@ -222,8 +242,9 @@ figure.highlight, div.highlighter-rouge {
   }
   
   /* Photos-post fix for mobile images */
-  .photos-post-content figure {
-    grid-column: 1 / -1;
+  .photos-post-content {
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 1%;
   }
    
   h1 {

@@ -17,3 +17,24 @@ window.addEventListener('scroll', function() {
     }
     lastScrollTop = scrollTop;
 }, false);
+
+function openLightbox(imgElement) {
+	const lb = document.getElementById('lightbox');
+	const lbImg = document.getElementById('lightbox-img');
+	const lbCap = document.getElementById('lightbox-caption');
+	lbImg.src = imgElement.src;
+	lbCap.textContent = imgElement.alt || "";
+	lb.style.display = 'flex';
+	// Prevent scrolling background while open
+	document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+	document.getElementById('lightbox').style.display = 'none';
+	document.body.style.overflow = 'auto';
+}
+
+// Close on 'Escape' key
+document.addEventListener('keydown', (e) => {
+	if (e.key === "Escape") closeLightbox();
+});
