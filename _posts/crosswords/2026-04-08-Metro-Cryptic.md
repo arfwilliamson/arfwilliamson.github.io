@@ -9,12 +9,12 @@ exolve-begin
   exolve-height: 13
   exolve-grid:
     TALENT.BETRAY
-    .S.N.W.O.M.E.
+    .S.N.W.O.M.N.
     ESPALIER.MACE
     .E.M.S.N.P.E.
     AMMO.TREATISE
     .B.U.E.....T.
-    FLORID REMARK
+    FLORID.REMARK
     .Y.....E.O.A.
     TRILBIES.DOLE
     .O.A.N.T.E.H.
