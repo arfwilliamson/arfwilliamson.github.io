@@ -46,7 +46,7 @@ exolve-begin
    13 Others mixing gin taking a break (7)
    14 Style of farm building suggest humbleness (7)
    16 Take in flat, tea - or coffee (5)
-   17 Clumsy spinet lacks head and gets mixed up (6)
+   17 Clumsy spinet lacks head and gets mixed up (5)
   exolve-copyright: Puzzler Media Ltd www.puzzler.com 
 exolve-end
 </div>
