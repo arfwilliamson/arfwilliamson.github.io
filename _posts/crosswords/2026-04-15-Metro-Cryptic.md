@@ -23,10 +23,10 @@ exolve-begin
     .PROTUBERANCE    
   exolve-across:
     1 Person checking your mind may be from Starship City (12)
-    8 Virginai has hired servant (5)
-    9 Have need or engineers and some paper (7)
+    8 Virginia has hired servant (5)
+    9 Have need of engineers and some paper (7)
    10 Confounded economists catch politician with it (6,6)
-   12 Course set to intercepts (6)
+   12 Course set to intercept (6)
    14 Heaps of tools initially found in bags (6)
    17 Red German eel changes colour (7,5)
    21 Improve, hence changes involving article (7)
@@ -38,7 +38,7 @@ exolve-begin
     3 Angry male with ram (3,2)
     4 Threatened to enquire about shortened journey (2,4)
     5 Ask for another mission? (7)
-    6 Avoid bit of comedy havinig initially rude content (5)
+    6 Avoid bit of comedy having initially rude content (5)
     7 Continue being cheeky about relative (7)
    11 Bird in the loudspeaker? (7)
    13 Opposed to Turkish commander this month (7)
