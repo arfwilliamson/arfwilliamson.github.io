@@ -40,7 +40,7 @@ exolve-begin
     2 Cas steers around performers (9)
     3 Television presenter in Soho street (4)
     5 No-go signal led off in grip of Conservatives (3,5)
-    5 Compete eagerly in Riviera (3)
+    6 Compete eagerly in Riviera (3)
     7 When speaking, becomes more tense with giants (6)
    10 Romantic departure made from one temple (9)
    13 Republican has part of castle in more central surroundings (9)
