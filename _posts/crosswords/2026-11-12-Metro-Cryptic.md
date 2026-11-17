@@ -34,7 +34,7 @@ exolve-begin
    21 Fifty-one scolded harshly, but given freedom (9)
    23 In favour of support for the most part (3)
    24 The best, yes, is rich and smooth (6)
-   24 Unknown barge travelling to capital city (6)
+   25 Unknown barge travelling to capital city (6)
   exolve-down:
     1 Offhand sort of labourer (6)
     2 Cas steers around performers (9)
