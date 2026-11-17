@@ -1,5 +1,5 @@
 ---
-title: "Metro Cryptic"
+title: "Metro Cryptic 1"
 date: 2026-08-24
 ---
 <div id="exolve">
