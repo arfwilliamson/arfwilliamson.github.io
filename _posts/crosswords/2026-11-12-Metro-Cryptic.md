@@ -11,7 +11,7 @@ exolve-begin
     CHACHA.CRAVAT
     A.C.O...E.I.I
     SIT.STEADIEST
-	   U.R.T.L.L...A
+    U.R.T.L.L...A
     ACES.DOMINION
     L.S.T.P.G.N.S
     ..SHEREKHAN..
