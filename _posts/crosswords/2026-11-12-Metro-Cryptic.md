@@ -43,7 +43,7 @@ exolve-begin
     6 Compete eagerly in Riviera (3)
     7 When speaking, becomes more tense with giants (6)
    10 Romantic departure made from one temple (9)
-   13 Republican has part of castle in more central surroundings (9)
+   13 Publican has part of castle in more central surroundings (9)
    14 Get realm entangled in wire (8)
    16 Begin growing wild lilac from France (6)
    17 Take in muscles or brawn at first (6)
