@@ -25,7 +25,7 @@ exolve-begin
     1 Recurring tea dance (3-3)
     4 Almost stuff container with scarf (6)
     8 Use a chair - it's broken (3)
-    9 Most deplorable plan stateside (9)
+    9 Most dependable plan stateside (9)
    11 Cards' winning serves (4)
    12 Kingdom has a party? Then put short skirt on (8)
    15 Kipling character has shaken her badly (5,4)
